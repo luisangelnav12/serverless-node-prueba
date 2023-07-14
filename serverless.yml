@@ -1,0 +1,26 @@
+service: my-serverless-api
+frameworkVersion: '3.33.0'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-2
+
+functions:
+  app:
+    handler: src/index.handler
+    events:
+      - http:
+          path: /apiSwapi
+          method: get
+      - http:
+          path: /apiSwapi/expenses
+          method: get
+      - http:
+          path: /apiSwapi/expenses
+          method: post
+      - http:
+          path: /{id}
+          method: get
+plugins:
+  - serverless-offline

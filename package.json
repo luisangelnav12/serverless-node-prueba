@@ -1,0 +1,28 @@
+{
+  "name": "pruebatec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sls offline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1414.0",
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "google-translate": "^3.0.0",
+    "i18next": "^23.2.11",
+    "i18next-node-fs-backend": "^2.1.3",
+    "promise-mysql": "^5.2.0",
+    "serverless": "^3.33.0",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^12.0.4"
+  }
+}
